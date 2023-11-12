@@ -1,0 +1,40 @@
+### Verbo GET – listar todos
+GET http://localhost:8000/funcionario/ HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+### Verbo GET – listar um
+GET http://localhost:8000/funcionario/10 HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+### Verbo POST – adicionar
+POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+content-type: application/json
+
+{
+"nome" : "Funcionário my G",
+"cpf" : "0123456910",
+"telefone" : "4988156790",
+"senha" : "senha123",
+"matricula" : "123123",
+"grupo" : 1
+}
+### Verbo PUT – atualiza
+PUT http://127.0.0.1:8000/funcionario/2 HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+content-type: application/json
+
+{
+"nome" : "eu testei isso",
+"cpf" : "12345678910",
+"telefone" : "4988882121",
+"senha" : "abc",
+"matricula" : "78910",
+"grupo" : 2
+}
+### Verbo DELETE - excluir
+DELETE http://127.0.0.1:8000/funcionario/3 HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey

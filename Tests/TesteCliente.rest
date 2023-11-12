@@ -1,0 +1,40 @@
+### Verbo GET – listar todos
+GET http://localhost:8000/cliente/ HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+### Verbo GET – listar um
+GET http://localhost:8000/cliente/10 HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+### Verbo POST – adicionar
+POST http://127.0.0.1:8000/cliente/ HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+content-type: application/json
+
+{
+"nome" : "Caio testador",
+"cpf" : "012345678910",
+"telefone" : "4999990000",
+"compra_fiado" : 10,
+"dia_fiado" : 21,
+"senha" : "caiosenha"
+}
+### Verbo PUT – atualiza
+PUT http://127.0.0.1:8000/cliente/1 HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
+content-type: application/json
+
+{
+"nome" : "Caio edit",
+"cpf" : "012345678910",
+"telefone" : "4999990000",
+"compra_fiado" : 10,
+"dia_fiado" : 21,
+"senha" : "caiosenha"
+}
+### Verbo DELETE - excluir
+DELETE http://127.0.0.1:8000/cliente/1 HTTP/1.1
+x-token: CaioToken
+x-key: CaioKey
