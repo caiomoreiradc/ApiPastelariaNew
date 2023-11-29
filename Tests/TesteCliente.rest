@@ -13,12 +13,12 @@ x-key: CaioKey
 content-type: application/json
 
 {
-"nome" : "Caio testador",
-"cpf" : "012345678910",
-"telefone" : "4999990000",
+"nome" : "Caio Login teste",
+"cpf" : "66666666666",
+"telefone" : "66666666666",
 "compra_fiado" : 10,
 "dia_fiado" : 21,
-"senha" : "caiosenha"
+"senha" : "teste123"
 }
 ### Verbo PUT – atualiza
 PUT http://127.0.0.1:8000/cliente/1 HTTP/1.1
